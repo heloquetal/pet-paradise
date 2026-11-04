@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pet Paradise</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body{
+    background:#fbf9ee;
+    color:#583113;
+}
+
+header{
+    background:#bfd399;
+    color:#583113;
+    padding:20px 8%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    position:sticky;
+    top:0;
+    z-index:100;
+}
+
+.logo{
+    font-size:1.8rem;
+    font-weight:bold;
+}
+
+nav a{
+    color:#583113;
+    text-decoration:none;
+    margin-left:20px;
+    font-weight:500;
+}
+
+.hero{
+    min-height:85vh;
+    background:
+    linear-gradient(rgba(0,0,0,0.4),
+    rgba(0,0,0,0.4)),
+    url("fol/pool.png");
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    color:#583113;
+}
+
+.hero-content h1{
+    font-size:4rem;
+    margin-bottom:20px;
+}
+
+.hero-content p{
+    font-size:1.3rem;
+    margin-bottom:30px;
+}
+
+.btn{
+    background:#bfd399;
+    color:#583113;
+    padding:15px 30px;
+    border:none;
+    border-radius:30px;
+    font-size:1rem;
+    cursor:pointer;
+    text-decoration:none;
+}
+
+section{
+    padding:80px 8%;
+}
+
+.titulo{
+    text-align:center;
+    font-size:2.5rem;
+    margin-bottom:50px;
+    color:#583113;
+}
+
+.servicios{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:#bfd399;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+    text-align:center;
+}
+
+.card h3{
+    color:#583113;
+    margin-bottom:15px;
+}
+
+.galeria{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:20px;
+}
+
+.galeria img{
+    width:100%;
+    height:300px;
+    object-fit:cover;
+    border-radius:15px;
+}
+
+.logo{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    font-size:1.8rem;
+    font-weight:bold;
+}
+
+.logo img{
+    height:70px;
+}
+
+.tabla{
+    width:100%;
+    border-collapse:collapse;
+}
+
+.tabla th,
+.tabla td{
+    padding:15px;
+    border:1px solid #583113;
+}
+
+.tabla th{
+    background:#583113;
+    color:#583113;
+}
+
+.formulario{
+    max-width:700px;
+    margin:auto;
+}
+
+.formulario input,
+.formulario select,
+.formulario textarea{
+    width:100%;
+    padding:15px;
+    margin-bottom:15px;
+    border:1px solid #583113;
+    border-radius:10px;
+}
+
+.formulario button{
+    width:100%;
+}
+
+.testimonios{
+    display:grid;
+    gap:20px;
+}
+
+.testimonio{
+    background:#bfd399;
+    padding:25px;
+    border-left:5px solid #583113;
+    border-radius:10px;
+}
+
+footer{
+    background:#bfd399;
+    color:#583113;
+    text-align:center;
+    padding:30px;
+}
+
+@media(max-width:768px){
+
+.hero-content h1{
+font-size:2.5rem;
+}
+
+nav{
+display:none;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">
+    <img src="fol/logos.png" alt="Logo">
+    <span>Pet Paradise</span>
+</div>
+
+<nav>
+<a href="#servicios">Servicios</a>
+<a href="#galeria">Galería</a>
+<a href="#tarifas">Tarifas</a>
+<a href="#reservar">Reservar</a>
+<a href="#contacto">Contacto</a>
+</nav>
+
+</header>
+
+<section class="hero">
+
+<div class="hero-content">
+
+<h1>El Paraíso para tu Mascota</h1>
+
+<p>
+Piscina climatizada, spa premium,
+guardería y parque de juegos para perros.
+</p>
+
+<a href="#reservar" class="btn">
+Reservar Ahora
+</a>
+
+</div>
+
+</section>
+
+<section id="servicios">
+
+<h2 class="titulo">Nuestros Servicios</h2>
+
+<div class="servicios">
+
+<div class="card">
+<h3>🛁 Spa Canino</h3>
+<p>Baños relajantes, higiene premium y tratamientos especiales.</p>
+</div>
+
+<div class="card">
+<h3>🏊 Piscina Climatizada</h3>
+<p>Ejercicio, diversión y rehabilitación acuática.</p>
+</div>
+
+<div class="card">
+<h3>🌳 Parque de Juegos</h3>
+<p>Amplias zonas seguras para correr y socializar.</p>
+</div>
+
+<div class="card">
+<h3>🐶 Guardería</h3>
+<p>Cuidado profesional durante todo el día.</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="galeria">
+
+<h2 class="titulo">Galería</h2>
+
+<div class="galeria">
+
+<img src="https://images.unsplash.com/photo-1548199973-03cce0bbc87b">
+
+<img src="https://images.unsplash.com/photo-1518717758536-85ae29035b6d">
+
+<img src="https://images.unsplash.com/photo-1517849845537-4d257902454a">
+
+<img src="https://images.unsplash.com/photo-1525253086316-d0c936c814f8">
+
+<img src="https://images.unsplash.com/photo-1552053831-71594a27632d">
+
+<img src="https://images.unsplash.com/photo-1537151625747-768eb6cf92b2">
+
+</div>
+
+<section id="tarifas">
+
+<h2 class="titulo">Tarifas</h2>
+
+<div style="max-width:700px;margin:auto;text-align:center;">
+
+<h3>Selecciona el tamaño de tu perro</h3>
+
+<br>
+
+<select id="tamanoPerro" style="
+width:100%;
+padding:15px;
+border-radius:10px;
+font-size:16px;
+">
+
+<option value="">¿Qué tamaño es tú perro?</option>
+<option value="pequeno"> Pequeño</option>
+<option value="mediano"> Mediano</option>
+<option value="grande"> Grande</option>
+
+</select>
+
+<br><br>
+
+<div id="fotoPerro" style="margin:20px 0;">
+
+<img
+id="imagenTamano"
+src="fol/a.png"
+alt="Perro"
+style="
+width:100%;
+max-width:100px;
+border-radius:15px;
+display:none;
+box-shadow:0 5px 15px rgba(0,0,0,0.2);
+">
+
+</div>
+
+<div id="preciosResultado">
+<p>Selecciona un tamaño para ver los precios.</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="reservar">
+
+<h2 class="titulo">Reserva Tu Plaza</h2>
+
+<form class="formulario" id="reservaForm">
+
+<input type="text" placeholder="Nombre del propietario" required>
+
+<input type="text" placeholder="Nombre de la mascota" required>
+
+<input type="tel" placeholder="Teléfono" required>
+
+<input type="email" placeholder="Correo electrónico" required>
+
+<select required>
+<option value="">Selecciona un servicio</option>
+<option>Spa Canino</option>
+<option>Piscina Climatizada</option>
+<option>Guardería</option>
+<option>Parque de Juegos</option>
+</select>
+
+<input type="date" required>
+
+<textarea rows="5" placeholder="Información adicional"></textarea>
+
+<button type="submit" class="btn">
+Reservar
+</button>
+
+</form>
+
+</section>
+
+<section>
+
+<h2 class="titulo">Opiniones</h2>
+
+<div class="testimonios">
+
+<div class="testimonio">
+★★★★★
+<br><br>
+Mi perro adora la piscina. Sale feliz cada vez.
+</div>
+
+<div class="testimonio">
+★★★★★
+<br><br>
+Instalaciones muy limpias y personal excelente.
+</div>
+
+<div class="testimonio">
+★★★★★
+<br><br>
+El mejor spa canino que hemos probado.
+</div>
+
+</div>
+
+</section>
+
+<section id="contacto">
+
+<h2 class="titulo">Contacto</h2>
+
+<div style="text-align:center; line-height:2;">
+
+📍 Tres Cantos, Madrid<br>
+
+📞 +34 651 155 599 <br>
+
+📧 info@petparadise.es<br>
+
+🕒 Lunes a Domingo: 09:00 - 20:00
+
+</div>
+
+</section>
+
+<footer>
+
+<p>
+© 2026 Pet Paradise - Todos los derechos reservados.
+</p>
+
+</footer>	
+
+<script>
+
+document
+.getElementById("reservaForm")
+.addEventListener("submit", function(e){
+
+e.preventDefault();
+
+alert(
+"✅ Reserva enviada correctamente. Nos pondremos en contacto contigo."
+);
+
+this.reset();
+
+});
+
+document
+.getElementById("tamanoPerro")
+.addEventListener("change", function(){
+
+const resultado =
+document.getElementById("preciosResultado");
+
+const imagen =
+document.getElementById("imagenTamano");
+if(this.value === "pequeno"){
+
+resultado.innerHTML = `
+<h3>🐕 Perro Pequeño</h3>
+<ul style="list-style:none;padding:0;line-height:2;">
+<li>Hotel canino: 35€/noche	packs: 5 noches 166€, 7 noches 225€, 10 noches 315€, 15 noches 462€ </li>
+<li>Spa Premium: 25€</li>
+<li>Piscina Climatizada: 10€/hora</li>
+<li>Guardería Media Jornada: 12€</li>
+<li>Guardería Completa: 20€</li>
+</ul>
+`;
+imagen.src = "fol/a.png";
+imagen.style.display = "block";
+}
+
+if(this.value === "mediano"){
+
+resultado.innerHTML = `
+<h3>🐶 Perro Mediano</h3>
+<ul style="list-style:none;padding:0;line-height:2;">
+<li>Spa Básico: 18€</li>
+<li>Spa Premium: 30€</li>
+<li>Piscina Climatizada: 12€/hora</li>
+<li>Guardería Media Jornada: 15€</li>
+<li>Guardería Completa: 25€</li>
+</ul>
+`;
+imagen.src = "fol/b.png";
+imagen.style.display = "block";
+}
+
+if(this.value === "grande"){
+
+resultado.innerHTML = `
+<h3>🦮 Perro Grande</h3>
+<ul style="list-style:none;padding:0;line-height:2;">
+<li>Spa Básico: 23€</li>
+<li>Spa Premium: 38€</li>
+<li>Piscina Climatizada: 15€/hora</li>
+<li>Guardería Media Jornada: 18€</li>
+<li>Guardería Completa: 30€</li>
+</ul>
+`;
+imagen.src = "fol/c.png";
+imagen.style.display = "block";
+}
+
+if(this.value === ""){
+
+resultado.innerHTML =
+"<p>Selecciona un tamaño para ver los precios.</p>";
+imagen.style.display = "none";
+}
+
+});
+
+</script>
+
+</body>
+</html>
